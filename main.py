@@ -1,16 +1,18 @@
-# This is a sample Python script.
+# Start with the prettifier
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# ------------------------------------------------------
+from rich import print as rprint # For rprinting
+from rich.pretty import pprint # For pretty printing
+from rich import inspect # For inspect
+from rich.console import Console # For console.print
+from rich.markdown import Markdown # For markdown
+from rich.panel import Panel # For Panel()
+from rich import box # For Panel Boxes
+from rich.prompt import Prompt # For Prompting
+from rich.style import Style # For styles colors
+from rich.text import Text # For text Styles
+console = Console() # Standard code to access console
+from rich.traceback import install
+install(show_locals=True)
+# -------------------------------------------------------
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
