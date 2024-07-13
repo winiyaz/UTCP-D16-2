@@ -1,3 +1,6 @@
+# This is code is for using the turles library
+
+
 # Start with the prettifier
 
 # ------------------------------------------------------
@@ -17,6 +20,28 @@ install(show_locals=True)
 # -------------------------------------------------------
 
 # Using turtle
-from turtle import Turtle
+from turtle import Turtle, Screen
 timmy = Turtle()
 rprint(timmy)
+
+my_screen = Screen()
+rprint(my_screen.canvheight)
+
+# Shapes and colors
+timmy.shape("turtle")
+timmy.color("coral")
+timmy.shapesize(stretch_wid=3, stretch_len=3, outline=1)
+timmy.screen.bgcolor("#020617")
+# Make it move 1oo
+
+def t_m():
+    for i in range(0,10):
+        timmy.forward(100)
+        timmy.backward(100)
+        timmy.left(20)
+        timmy.right(50)
+
+
+# This
+t_m()
+my_screen.exitonclick()
