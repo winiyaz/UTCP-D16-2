@@ -16,13 +16,7 @@ from rich.traceback import install
 install(show_locals=True)
 # -------------------------------------------------------
 
-# Testing the printing capability here
-rprint(f'''
-[red]
-Color Print Test
-''')
-
-# Testing an object
-
-manjo = ['gin', 'juice', 'panty']
-pprint(manjo, expand_all=True)
+# Using turtle
+from turtle import Turtle
+timmy = Turtle()
+rprint(timmy)
