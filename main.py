@@ -41,7 +41,6 @@ def t_m():
         timmy.left(20)
         timmy.right(50)
 
-
 # This
 t_m()
 my_screen.exitonclick()
